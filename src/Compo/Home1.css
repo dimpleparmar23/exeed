@@ -1,0 +1,42 @@
+.card {
+
+ margin-bottom: 20px; 
+ overflow: hidden;
+ white-space: nowrap;
+ background-color: rgb(221, 236, 207);
+}
+
+#harsh{
+ text-align: center;
+ font-size: 20px;
+ margin-top: 10px;
+ 
+}
+
+
+
+.img {
+ margin-right: 20px;
+ padding: right,10px;
+ overflow: hidden;
+ white-space: nowrap;
+ 
+}
+
+
+
+.readmore {
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ color: blue;
+}
+
+image{
+ border: 1px, solid;
+ border-color: black;
+
+}
+
+
+

@@ -1,0 +1,49 @@
+.container {
+ display: flex;
+ align-items: center;
+ margin-bottom: 30px; /* Add margin between containers */
+}
+
+.container:nth-child(even) .image {
+ order: 2; /* Change the order of even containers (2nd, 4th, 6th, etc.) */
+}
+
+.container:nth-child(even) .text {
+ order: 1; /* Change the order of even containers (2nd, 4th, 6th, etc.) */
+}
+
+.image {
+ flex: 1;
+ position: relative;
+ overflow: hidden;
+ max-height: 400px; /* Set the maximum height for the image */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+ border-radius: 8px; /* Add border radius to the image */
+}
+
+.image img {
+ max-width: 100%; /* Ensure the image does not exceed its container width */
+ height: auto; /* Allow the height of the image to adjust based on the width */
+ transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.image:hover img {
+ transform: scale(1.1); /* Increase image size on hover */
+}
+
+.text {
+ flex: 1;
+ padding: 0 20px; /* Adjust as needed for spacing between image and text */
+}
+
+.text p {
+ font-size: 1.2rem;
+ line-height: 1.6;
+ color: #333;
+}
+
+.text p::first-letter {
+ font-size: 2rem; /* Increase font size for first letter */
+ font-weight: bold;
+ color: #007bff; /* Blue color for first letter */
+}
